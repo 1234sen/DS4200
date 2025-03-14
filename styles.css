@@ -1,0 +1,105 @@
+/* Custom Font */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Color Scheme */
+/* 新增样式 */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+}
+
+.nav-list {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.nav-list a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: var(--secondary-color);
+}
+
+.contact-footer {
+    background: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.hobby-img {
+    border: 3px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+/* Layout Adjustments */
+.content-grid {
+    display: grid;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-img, .hobby-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Contact Footer */
+.contact-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
+.keyword {
+    border: 1px solid var(--primary-color);
+    padding: 4px 8px;
+    border-radius: 15px;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+/* 添加悬停效果增强交互性 */
+.keyword:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* 调整关键词容器布局 */
+.keywords {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main-image {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+/* 添加响应式调整 */
+@media (max-width: 768px) {
+    .main-image {
+        max-width: 95%;
+        margin: 15px auto;
+    }
+}
